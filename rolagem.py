@@ -29,9 +29,9 @@ def roll_dice_complex(dice_string, modo_dinamico=False):
             resultado = f"{modificado} ({rolagem}{operador}{MdDados})" if MdDados != 0 else str(rolagem)
 
             if modo_dinamico:
-                if modificado <= 7:
+                if modificado <= 6:
                     resultado += " **[FALHA]**"
-                elif 8 <= modificado <= 13:
+                elif 7 <= modificado <= 13:
                     resultado += " **[PARCIAL]**"
                 else:
                     resultado += " **[ACERTO]**"
